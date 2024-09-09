@@ -18,6 +18,11 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
   {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
