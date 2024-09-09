@@ -26,6 +26,7 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
+  { "niuiic/multiple-session.nvim", dependencies = { "niuiic/core.nvim" } },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -72,7 +73,7 @@ return {
       auto_hide = 1
     },
   },
-  { 'akinsho/toggleterm.nvim', version = "*", config = true },
+  { 'akinsho/toggleterm.nvim', version = "*",      config = true },
   {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -91,5 +92,5 @@ return {
   },
 
   -- Themes
-  { "catppuccin/nvim", name = "catppuccin" }
+  { "catppuccin/nvim",         name = "catppuccin" }
 }
