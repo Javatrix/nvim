@@ -4,6 +4,15 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        rust,
+        lua,
+      }
+    }
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     dependencies = {
@@ -12,5 +21,13 @@ return {
       "MunifTanjim/nui.nvim",
       "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     }
-  }
+  },
+  {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  },
+
+  -- Themes
+  { "catppuccin/nvim", name = "catppuccin" }
 }
