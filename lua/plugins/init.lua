@@ -34,7 +34,7 @@ return {
     end,
     lazy = false, -- To ensure it applies the theme on startup
   },
-  
+
   -- Themes
   { "catppuccin/nvim", name = "catppuccin" }
 }

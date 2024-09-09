@@ -1,4 +1,5 @@
 local map = vim.keymap.set
+
 map("n", ";", ":", { desc = "Enter CMD mode" } )
 
 local builtin = require("telescope.builtin")
