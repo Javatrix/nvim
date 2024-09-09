@@ -9,8 +9,8 @@ return {
   { "hrsh7th/vim-vsnip" },
   { "L3MON4D3/LuaSnip" },
   { "saadparwaiz1/cmp_luasnip" },
-  { "SirVer/ultisnips" },
-  { "quangnguyen30192/cmp-nvim-ultisnips" },
-  { "dcampos/nvim-snippy" },
-  { "dcampos/cmp-snippy" },
+  -- { "SirVer/ultisnips" },
+  -- { "quangnguyen30192/cmp-nvim-ultisnips" },
+  -- { "dcampos/nvim-snippy" },
+  -- { "dcampos/cmp-snippy" },
 }
