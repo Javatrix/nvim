@@ -9,3 +9,6 @@ map("n", "<leader>fb", builtin.buffers, { desc = "Find in buffers" })
 
 map("n", "<leader>e", vim.cmd.Neotree, { desc = "File tree" })
 map("n", "<leader>l", vim.cmd.Lazy, { desc = "Open Lazy" })
+map("n", "<leader>x", vim.cmd.BufferClose, { desc = "Close buffer" })
+map("n", "<tab>", vim.cmd.bprev, { desc = "Next buffer" })
+map("n", "<tab>", vim.cmd.bnext, { desc = "Previous buffer" })
