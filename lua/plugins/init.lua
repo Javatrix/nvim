@@ -10,17 +10,17 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
-    }
+    },
   },
   {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.8',
-    dependencies = { 'nvim-lua/plenary.nvim' }
+    dependencies = { 'nvim-lua/plenary.nvim' },
   },
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
-    config = true
+    config = true,
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -29,7 +29,7 @@ return {
         rust,
         lua,
       }
-    }
+    },
   },
   { "rcarriga/nvim-notify" },
   {
@@ -67,7 +67,6 @@ return {
     opts = {
       auto_hide = 1
     },
-    version = '^1.0.0', -- optional: only update when a new 1.x version is released
   },
   { 'akinsho/toggleterm.nvim', version = "*", config = true },
   {
