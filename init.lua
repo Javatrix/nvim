@@ -12,6 +12,7 @@ require("conform").setup({
     lsp_format = "fallback",
   },
 })
+require("todo-comments").setup()
 
 local opt = vim.opt
 
