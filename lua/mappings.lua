@@ -16,8 +16,11 @@ map("n", "<tab>", vim.cmd.bnext, { desc = "Previous buffer" })
 
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-map("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
+map("n", "[", "<CMD>lua vim.diagnostic.goto_prev()<CR>", { desc = "Go to previous diagnostic" })
+map("n", "]", "<CMD>vim.diagnostic.goto_next()<CR>", { desc = "Go to next diagnostic" })
+map("n", "gi", "<CMD>vim.lsp.buf.implementation<CR>", { desc = "Go to implementation" })
 map("n", "<leader>sh", vim.lsp.buf.signature_help, { desc = "Show signature help" })
+map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
 
 map("n", "<leader>th", "<CMD>ToggleTerm direction=horizontal<CR>", { desc = "Horizontal terminal" })
 map("n", "<leader>tv", "<CMD>ToggleTerm direction=vertical size=40<CR>", { desc = "Vertical terminal" })
