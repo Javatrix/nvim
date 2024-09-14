@@ -21,6 +21,7 @@ map("n", "]", "<CMD>vim.diagnostic.goto_next()<CR>", { desc = "Go to next diagno
 map("n", "gi", "<CMD>vim.lsp.buf.implementation<CR>", { desc = "Go to implementation" })
 map("n", "<leader>sh", vim.lsp.buf.signature_help, { desc = "Show signature help" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+map("n", "<leader>ra", "<CMD>lua require('renamer').rename()<CR>", { desc = "Rename" })
 
 map("n", "<leader>th", "<CMD>ToggleTerm direction=horizontal<CR>", { desc = "Horizontal terminal" })
 map("n", "<leader>tv", "<CMD>ToggleTerm direction=vertical size=40<CR>", { desc = "Vertical terminal" })

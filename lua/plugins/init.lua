@@ -22,6 +22,7 @@ return {
     event = "InsertEnter",
     config = true,
   },
+  { "filipdutescu/renamer.nvim",    dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
@@ -73,7 +74,7 @@ return {
       auto_hide = 1
     },
   },
-  { 'akinsho/toggleterm.nvim', version = "*",      config = true },
+  { 'akinsho/toggleterm.nvim', version = "*", config = true },
   {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -92,5 +93,5 @@ return {
   },
 
   -- Themes
-  { "catppuccin/nvim",         name = "catppuccin" }
+  { "catppuccin/nvim", name = "catppuccin" }
 }
