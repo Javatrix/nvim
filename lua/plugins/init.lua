@@ -12,6 +12,14 @@ return {
     opts = {
     },
   },
+  { "uga-rosa/ccc.nvim" },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    -- opts = {},
+  },
   {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.8',
@@ -22,7 +30,8 @@ return {
     event = "InsertEnter",
     config = true,
   },
-  { "filipdutescu/renamer.nvim",    dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
+  { "terrortylor/nvim-comment" },
+  { "filipdutescu/renamer.nvim", dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
@@ -74,7 +83,7 @@ return {
       auto_hide = 1
     },
   },
-  { 'akinsho/toggleterm.nvim', version = "*", config = true },
+  { 'akinsho/toggleterm.nvim', version = "*",      config = true },
   {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -93,5 +102,5 @@ return {
   },
 
   -- Themes
-  { "catppuccin/nvim", name = "catppuccin" }
+  { "catppuccin/nvim",         name = "catppuccin" }
 }

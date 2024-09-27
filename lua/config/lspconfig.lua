@@ -3,3 +3,4 @@ lspconfig.lua_ls.setup {}
 lspconfig.rust_analyzer.setup {}
 lspconfig.pyright.setup {}
 lspconfig.jdtls.setup {}
+lspconfig.cssls.setup {}

@@ -1,7 +1,9 @@
 require("config.lazy")
 require("config.lspconfig")
 require("mappings")
+-- require("config.indent-blankline")
 require("mason").setup()
+require('nvim_comment').setup()
 require("mason-lspconfig").setup {
   ensure_installed = { "lua_ls", "rust_analyzer" },
 }
@@ -20,12 +22,13 @@ require("multiple-session").setup()
 
 vim.notify = require("notify")
 
-local opt = vim.opt
+require("config/options")
 
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.softtabstop = 2
-opt.expandtab = true
-opt.smartindent = true
-opt.wrap = false
-opt.termguicolors = true
+local ccc = require("ccc")
+
+ccc.setup({
+  highlighter = {
+    auto_enable = true,
+    lsp = true,
+  },
+})
